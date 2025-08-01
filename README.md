@@ -31,19 +31,28 @@
 
 subscription-tracker/
 ├── server/ # Express server and API routes
-│ ├── controllers/ # Route logic
-│ ├── models/ # Mongoose models
-│ ├── middleware/ # Auth, error, and bot-detection middleware
-│ ├── routes/ # Route definitions
-│ ├── utils/ # Helper functions (email, JWT, etc.)
-│ └── index.js # Server entry point
-├── public/ # Frontend files (HTML, CSS, JS)
-├── .env.development.local # Development environment variables
-├── .env.production.local # Production environment variables
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
 
----
+│ ├── controllers/ # Route logic
+
+│ ├── models/ # Mongoose models
+
+│ ├── middleware/ # Auth, error, and bot-detection middleware
+
+│ ├── routes/ # Route definitions
+
+│ ├── utils/ # Helper functions (email, JWT, etc.)
+
+│ └── index.js # Server entry point
+
+├── public/ # Frontend files (HTML, CSS, JS)
+
+├── .env.development.local # Development environment variables
+
+├── .env.production.local # Production environment variables
+
+├── package.json # Project metadata and dependencies
+
+└── README.md # Project documentation
 
 ---
 
@@ -60,9 +69,6 @@ Set up environment variables
 
 Create .env.development.local and .env.production.local in the root directory and add:
 
-env
-Copy
-Edit
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 EMAIL_USER=your_email@example.com
@@ -74,29 +80,37 @@ npm start
 Open the frontend in your browser
 Navigate to public/index.html or open it directly in your browser.
 
-🔌 API Endpoints
-🔐 Authentication
+## 🔌 API Endpoints
+## 🔐 Authentication
 Method	Endpoint	Description
+
 POST	/api/v1/auth/sign-up	Register a new user
+
 POST	/api/v1/auth/sign-in	Log in a user
+
 POST	/api/v1/auth/sign-out	Log out a user
 
-📦 Subscriptions
+## 📦 Subscriptions
 Method	Endpoint	Description
 GET	/api/v1/subscriptions	Get all subscriptions
+
 POST	/api/v1/subscriptions	Create a new subscription
+
 GET	/api/v1/subscriptions/user/:id	Get subscriptions for a specific user
 
-👤 Users
+## 👤 Users
 Method	Endpoint	Description
+
 GET	/api/v1/users	Get all users
+
 GET	/api/v1/users/:id	Get a specific user
 
-🔁 Workflows
+## 🔁 Workflows
 Method	Endpoint	Description
+
 POST	/api/v1/workflows/subscription/reminder	Trigger subscription reminders
 
-🧪 Usage
+## 🧪 Usage
 Start the server using:
 
 
@@ -105,12 +119,13 @@ Open your browser and navigate to:
 
 public/index.html
 
-🤝 Contributions
+## 🤝 Contributions
 Contributions, issues, and feature requests are welcome!
+
 Feel free to fork the repo, submit a pull request, or open an issue.
 
-📫 Contact
-If you have any questions or suggestions, feel free to reach out via GitHub or email.
+## 📫 Contact
+If you have any questions or suggestions, feel free to reach out via GitHub.
 
 Happy Tracking! 🚀
 
